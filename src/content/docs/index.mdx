@@ -1,0 +1,43 @@
+---
+title: GitHub Essentials
+description: Mastering version control, collaboration, and professional Git workflows.
+template: splash
+hero:
+  tagline: The ultimate guide to Git & GitHub for modern developers.
+  image:
+    html: '<div style="font-size: 8rem;">🚀</div>'
+  actions:
+    - text: Start Learning
+      link: /fundamentals/getting-started/
+      icon: right-arrow
+    - text: View on GitHub
+      link: https://github.com/SimplyLouie/gh-essentials
+      icon: external
+      variant: minimal
+---
+
+import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+## 📚 Core Learning Paths
+
+<CardGrid stagger>
+	<Card title="Fundamentals" icon="open-book">
+		Master the local Git lifecycle: configuration, commits, and the staging area.
+    <LinkCard title="Get Started" href="/fundamentals/getting-started/" />
+	</Card>
+	<Card title="Collaboration" icon="users">
+		Learn how to work with teams using Forks, Pull Requests, and Upstream syncing.
+    <LinkCard title="Learn Collaboration" href="/collaboration/forking-vs-cloning/" />
+	</Card>
+	<Card title="Expert Tools" icon="setting">
+		Master advanced workflows like Rebase, Cherry-pick, and recovering work with Reflog.
+    <LinkCard title="Go Pro" href="/advanced/power-tools/" />
+	</Card>
+	<Card title="Best Practices" icon="approve-check">
+		Adopt industry standards for commit messages, PR etiquette, and branch management.
+	</Card>
+</CardGrid>
+
+:::tip[Contribution]
+Found a mistake or want to add a guide? This site is open source! Feel free to open a PR.
+:::
