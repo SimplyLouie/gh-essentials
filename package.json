@@ -7,7 +7,8 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "deploy": "astro build && gh-pages -d dist --dotfiles --nojekyll"
   },
   "dependencies": {
     "@astrojs/sitemap": "3.1.6",
@@ -15,5 +16,8 @@
     "astro": "4.15.11",
     "sharp": "^0.33.3",
     "zod": "3.23.8"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
