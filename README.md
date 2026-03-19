@@ -1,49 +1,66 @@
-# Starlight Starter Kit: Basics
+# 🚀 GitHub Essentials
 
-[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
+The ultimate companion for developers mastering Git and GitHub. Built with [Astro](https://astro.build) and [Starlight](https://starlight.astro.build), this project provides a high-quality, topic-based reference for everything from basic commits to advanced rebasing workflows.
 
+## 📚 What's Inside?
+
+Our documentation is structured into three core paths to guide developers from beginner to pro:
+
+- **Fundamentals**: Local Git lifecycle, staging, commits, and branching basics.
+- **Collaboration**: Mastering the Fork-and-Pull model, Syncing Upstream, and PR etiquette.
+- **Expert Tools**: Handling advanced scenarios with Rebase, Cherry-pick, Stash, and Reflog.
+
+## 🛠️ Getting Started
+
+### Prerequisites
+Ensure you have [Node.js](https://nodejs.org/) (v18.14.1 or higher) installed on your machine.
+
+### Local Development
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/SimplyLouie/gh-essentials.git
+   cd gh-essentials
+   ```
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+3. **Start the dev server**:
+   ```bash
+   npm run dev
+   ```
+   *Visit [http://localhost:4321/gh-essentials/](http://localhost:4321/gh-essentials/) to view the site locally.*
+
+## 🚀 Deployment
+
+This project is deployed to **GitHub Pages** using a manual branch-sync model (bypassing GitHub Actions to avoid billing/limitations).
+
+### How to Deploy
+Whenever you want to push new changes to the live site:
+```bash
+npm run deploy
 ```
-npm create astro@latest -- --template starlight
-```
+*This will build the production site and push the `dist/` directory to the `gh-pages` branch automatically.*
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 📂 Project Structure
 
-## 🚀 Project Structure
-
-Inside of your Astro + Starlight project, you'll see the following folders and files:
-
-```
+```text
 .
-├── public/
 ├── src/
-│   ├── assets/
-│   ├── content/
-│   │   └── docs/
-│   └── content.config.ts
-├── astro.config.mjs
-├── package.json
-└── tsconfig.json
+│   ├── assets/       # Images and media
+│   └── content/
+│       └── docs/     # Markdown documentation (topic-based)
+├── public/           # Static assets (favicons, etc.)
+├── astro.config.mjs  # Starlight & Astro configuration
+└── package.json      # Build & Deploy scripts
 ```
 
-Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
+## 🤝 Contributing
 
-Images can be added to `src/assets/` and embedded in Markdown with a relative link.
+Found a mistake or have a "Power Tool" you'd like to document?
+1. Fork the repo.
+2. Create your feature branch.
+3. Submit a Pull Request.
 
-Static assets, like favicons, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
+---
+*Created with ❤️ by [SimplyLouie](https://github.com/SimplyLouie)*
